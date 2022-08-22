@@ -45,13 +45,13 @@ int printSumOfNumberDivisibleBy3(List numberList) {
 //Từ. 1 đến 10000, Viết chương trình đếm xem có bao nhiêu chữ số chia hết cho 3 , bao nhiêu số chia hết cho 5
 
 int countingNumbers(int number) {
-  int divisibleBy3 = 0;
-  int divisibleBy5 = 0;
+  int n = 0;
+  int m = 0;
   for (int i = 1; i < number; i++) {
     if (i % 3 == 0)
-      divisibleBy3 = divisibleBy3 + 1;
-    else if (i % 5 == 0) divisibleBy5 = divisibleBy5 + 1;
+      n = n + 1;
+    else if (i % 5 == 0) m = m + 1;
   }
-  print("Có $divisibleBy3 số chia hết cho 3");
-  print("Có $divisibleBy5 số chia hết cho 5");
+  print("Có $n số chia hết cho 3");
+  print("Có $m số chia hết cho 5");
 }
